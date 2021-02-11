@@ -3,10 +3,6 @@ let HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: "./app/index.js",
-  devServer: {
-    inline:true,
-    port: 3000
-  },
   module: {
     rules: [
       {
@@ -49,6 +45,7 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     contentBase: path.resolve(__dirname, './dist'),
+    port: 3000
   },
   plugins: [
     new HtmlWebpackPlugin({
