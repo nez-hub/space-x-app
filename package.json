@@ -16,7 +16,6 @@
     "test": "echo \"No test script\"",
     "build": "webpack",
     "start": "webpack serve",
-    "stop": "killall node",
     "lint": "eslint app --ext .js,.jsx",
     "lint:fix": "eslint --fix app --ext .js,.jsx"
   },
