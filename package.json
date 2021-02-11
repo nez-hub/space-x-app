@@ -15,8 +15,7 @@
   "scripts": {
     "test": "echo \"No test script\"",
     "build": "webpack",
-    "start": "webpack serve",
-    "stop": "kill $(lsof -i :4000 | grep node | awk '{print $2}')",
+    "start": "killall node && webpack serve",
     "lint": "eslint app --ext .js,.jsx",
     "lint:fix": "eslint --fix app --ext .js,.jsx"
   },
