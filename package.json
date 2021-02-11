@@ -44,7 +44,6 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "kill-port-process": "2.3.0",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
