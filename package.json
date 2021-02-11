@@ -15,7 +15,8 @@
   "scripts": {
     "test": "echo \"No test script\"",
     "build": "webpack",
-    "start": "killall node && webpack serve",
+    "start": "webpack serve",
+    "stop": "kill-port -p 3000",
     "lint": "eslint app --ext .js,.jsx",
     "lint:fix": "eslint --fix app --ext .js,.jsx"
   },
@@ -44,6 +45,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "kill-port-process": "2.3.0",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
